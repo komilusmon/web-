@@ -1,37 +1,57 @@
 <!DOCTYPE html>
-
 <html>
-    <head>
-        <title>Contacts</title>
-        <link rel="icon" type="image/jpg" href="./images/5362075822640459591_99..jpg" style="border-radius: 50%;">
-        <link rel="stylesheet" href="./style.css">
-    </head>
-    <body>
-        <h4>
-            <a href="./index.html">Back to portfolio</a>
-        </h4>
-        <h3 class="contact_1">Contact me:</h3>
-        <from action="contact.php" method="GET">
-            <div class="field">
-                <label for="firstname">Firstname</label>
-                <input type="text" name="firstname" id="firstname">
-            </div>
-            <div class="field">
-                <label for="lastname">Lastname</label>
-                <input type="text" name="lastname" id="lastname">
-            </div>
-            <div class="field">
-                 <label for="email">Email</label>
-                 <input type="email" name="email" id="email">
-            </div>
-            <div class="field">
-                <label for="message">message:</label><br>
-                <textarea id="message" name="message" rows="10"></textarea>
-            </div>
-            <div class="field">
-                <button type="submit">Send</button>
-            </div>
-        </from>
-          
-    </body>
+  <head>
+    <title>Contacts</title>
+    <link
+      rel="icon"
+      type="image/jpg"
+      href="./images/5362075822640459591_99..jpg"
+      style="border-radius: 50%"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h4>
+      <a href="./index.html">⬅ Back to portfolio</a>
+    </h4>
+
+    <h3 class="contact_1">Contact me:</h3>
+
+    <!-- ✅ TO‘G‘RILANGAN FORM -->
+    <form action="contact.php" method="GET" class="contact-form">
+      <div class="field">
+        <label for="firstname">Firstname</label>
+        <input type="text" name="firstname" id="firstname" required />
+      </div>
+
+      <div class="field">
+        <label for="lastname">Lastname</label>
+        <input type="text" name="lastname" id="lastname" required />
+      </div>
+
+      <div class="field">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" required />
+      </div>
+
+      <div class="field">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="6" required></textarea>
+      </div>
+
+      <div class="field">
+        <button type="submit">Send</button>
+      </div>
+
+      <div class="video-wrapper">
+        <video width="100%" controls id="videoks">
+          <source
+            src="./images/VID_20251030_130215_779.mp4"
+            type="video/mp4"
+          />
+          Sizning brauzeringiz videoni o‘qiy olmaydi.
+        </video>
+      </div>
+    </form>
+  </body>
 </html>
